@@ -658,7 +658,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Blogger.BloggerWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.RickyChuang.Blogger.BloggerWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -685,7 +685,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Blogger.BloggerWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.RickyChuang.Blogger.BloggerWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -825,6 +825,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Blogger/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Blogger;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -834,7 +835,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Blogger;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.RickyChuang.Blogger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -855,6 +856,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Blogger/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Blogger;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -864,7 +866,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Blogger;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.RickyChuang.Blogger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -885,9 +887,9 @@
 				IBSC_MODULE = BloggerWatch_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = BloggerWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = self.edu.Blogger;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = edu.RickyChuang.Blogger;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Blogger.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.RickyChuang.Blogger.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -911,9 +913,9 @@
 				IBSC_MODULE = BloggerWatch_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = BloggerWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = self.edu.Blogger;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = edu.RickyChuang.Blogger;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Blogger.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.RickyChuang.Blogger.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -946,7 +948,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Blogger.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.RickyChuang.Blogger.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -980,7 +982,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Blogger.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.RickyChuang.Blogger.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
