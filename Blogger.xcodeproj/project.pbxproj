@@ -7,15 +7,126 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0A266B278A14FA00D6F52F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCC989E278A0F2300E29EF2 /* WidgetKit.framework */; };
+		9C0A266C278A14FA00D6F52F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCC98A0278A0F2300E29EF2 /* SwiftUI.framework */; };
+		9C0A266F278A14FA00D6F52F /* BloggerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A266E278A14FA00D6F52F /* BloggerWidget.swift */; };
+		9C0A2671278A14FA00D6F52F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0A2670278A14FA00D6F52F /* Assets.xcassets */; };
+		9C0A2675278A14FA00D6F52F /* BloggerWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9C0A266A278A14FA00D6F52F /* BloggerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9C17E953278F2677005AFE9F /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C17E952278F2677005AFE9F /* SettingView.swift */; };
+		9C17E957278F48BD005AFE9F /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C17E956278F48BD005AFE9F /* TagView.swift */; };
+		9C305148278AE094007868BD /* BloggerPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C305147278AE094007868BD /* BloggerPostViewModel.swift */; };
 		9C6450892788B81D00615D39 /* BloggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450882788B81D00615D39 /* BloggerApp.swift */; };
 		9C64508B2788B81D00615D39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C64508A2788B81D00615D39 /* ContentView.swift */; };
 		9C64508D2788B81E00615D39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C64508C2788B81E00615D39 /* Assets.xcassets */; };
 		9C6450902788B81E00615D39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C64508F2788B81E00615D39 /* Preview Assets.xcassets */; };
 		9C6450922788B81E00615D39 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450912788B81E00615D39 /* Persistence.swift */; };
 		9C6450952788B81E00615D39 /* Blogger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450932788B81E00615D39 /* Blogger.xcdatamodeld */; };
+		9C6450A12788BBB400615D39 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450A02788BBB400615D39 /* HomeView.swift */; };
+		9C6450A32788BBBF00615D39 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450A22788BBBF00615D39 /* ExploreView.swift */; };
+		9C6450A52788BBD500615D39 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450A42788BBD500615D39 /* SavedView.swift */; };
+		9C6450A72788BBF200615D39 /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450A62788BBF200615D39 /* AuthorView.swift */; };
+		9C6450AA2788C4C400615D39 /* HomeTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450A92788C4C400615D39 /* HomeTagView.swift */; };
+		9C6450AD2788C93800615D39 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 9C6450AC2788C93800615D39 /* BottomSheet */; };
+		9C6450B72788EAE200615D39 /* BloggerFeedJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450B62788EAE200615D39 /* BloggerFeedJSONModel.swift */; };
+		9C6450B92788F19200615D39 /* BloggerFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450B82788F19200615D39 /* BloggerFeedViewModel.swift */; };
+		9C6450BB2788FD7300615D39 /* BloggerSearchFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450BA2788FD7300615D39 /* BloggerSearchFeedViewModel.swift */; };
+		9C6450BD2789004800615D39 /* EntryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450BC2789004800615D39 /* EntryRowView.swift */; };
+		9C6450BF27890BC900615D39 /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450BE27890BC900615D39 /* BookmarkView.swift */; };
+		9C6450C227897EAD00615D39 /* SavedEntryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450C127897EAD00615D39 /* SavedEntryRowView.swift */; };
+		9C6450C52789975C00615D39 /* ExploreEntryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450C42789975C00615D39 /* ExploreEntryRowView.swift */; };
+		9C6450C827899B0100615D39 /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450C727899B0100615D39 /* BrowserView.swift */; };
+		9C6450CA27899B1D00615D39 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450C927899B1D00615D39 /* PostView.swift */; };
+		9C6450CC2789A10500615D39 /* ShareSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450CB2789A10500615D39 /* ShareSheetView.swift */; };
+		9C6450CE2789E86E00615D39 /* SavedPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450CD2789E86D00615D39 /* SavedPostView.swift */; };
+		9C6450D02789F16400615D39 /* EditNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450CF2789F16400615D39 /* EditNoteView.swift */; };
+		9C71E979278D51B1008BD8B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C71E978278D51B1008BD8B2 /* Assets.xcassets */; };
+		9C71E97F278D51B2008BD8B2 /* BloggerWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9C71E97E278D51B2008BD8B2 /* BloggerWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9C71E984278D51B2008BD8B2 /* ListViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C71E983278D51B2008BD8B2 /* ListViewView.swift */; };
+		9C71E986278D51B2008BD8B2 /* BloggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C71E985278D51B2008BD8B2 /* BloggerApp.swift */; };
+		9C71E988278D51B2008BD8B2 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C71E987278D51B2008BD8B2 /* ComplicationController.swift */; };
+		9C71E98A278D51B2008BD8B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C71E989278D51B2008BD8B2 /* Assets.xcassets */; };
+		9C71E98D278D51B2008BD8B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C71E98C278D51B2008BD8B2 /* Preview Assets.xcassets */; };
+		9C71E991278D51B2008BD8B2 /* BloggerWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9C71E976278D51B0008BD8B2 /* BloggerWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9C71E99A278D52A7008BD8B2 /* BloggerFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450B82788F19200615D39 /* BloggerFeedViewModel.swift */; };
+		9C71E99B278D5310008BD8B2 /* BloggerFeedJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450B62788EAE200615D39 /* BloggerFeedJSONModel.swift */; };
+		9C71E99C278D53A6008BD8B2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450912788B81E00615D39 /* Persistence.swift */; };
+		9C71E99D278D5450008BD8B2 /* Blogger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450932788B81E00615D39 /* Blogger.xcdatamodeld */; };
+		9C71E99E278D5C94008BD8B2 /* BloggerSearchFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450BA2788FD7300615D39 /* BloggerSearchFeedViewModel.swift */; };
+		9C97A4582796CA0C00E05A98 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C97A4572796CA0B00E05A98 /* TagListView.swift */; };
+		9C97A45A2796CF6E00E05A98 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C97A4592796CF6E00E05A98 /* SafariView.swift */; };
+		9CBD2EDD278BF60000CFAB6C /* BloggerFeedJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6450B62788EAE200615D39 /* BloggerFeedJSONModel.swift */; };
+		9CE2B5BE279731D9003E38BD /* AddTagButtomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2B5BD279731D9003E38BD /* AddTagButtomSheetView.swift */; };
+		9CF3F0C4278ADDE000ADB926 /* BloggerWidgetJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3F0C3278ADDE000ADB926 /* BloggerWidgetJSONModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9C0A2673278A14FA00D6F52F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C64507D2788B81D00615D39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C0A2669278A14FA00D6F52F;
+			remoteInfo = BloggerWidgetExtension;
+		};
+		9C71E980278D51B2008BD8B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C64507D2788B81D00615D39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C71E97D278D51B2008BD8B2;
+			remoteInfo = "BloggerWatch WatchKit Extension";
+		};
+		9C71E98F278D51B2008BD8B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C64507D2788B81D00615D39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C71E975278D51B0008BD8B2;
+			remoteInfo = BloggerWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9C71E992278D51B2008BD8B2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9C71E991278D51B2008BD8B2 /* BloggerWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C71E995278D51B2008BD8B2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9C71E97F278D51B2008BD8B2 /* BloggerWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CCC98AE278A0F2400E29EF2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9C0A2675278A14FA00D6F52F /* BloggerWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9C0A266A278A14FA00D6F52F /* BloggerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BloggerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0A266E278A14FA00D6F52F /* BloggerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloggerWidget.swift; sourceTree = "<group>"; };
+		9C0A2670278A14FA00D6F52F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C0A2672278A14FA00D6F52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C17E952278F2677005AFE9F /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		9C17E956278F48BD005AFE9F /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		9C305147278AE094007868BD /* BloggerPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloggerPostViewModel.swift; sourceTree = "<group>"; };
 		9C6450852788B81D00615D39 /* Blogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6450882788B81D00615D39 /* BloggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloggerApp.swift; sourceTree = "<group>"; };
 		9C64508A2788B81D00615D39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,10 +134,61 @@
 		9C64508F2788B81E00615D39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9C6450912788B81E00615D39 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		9C6450942788B81E00615D39 /* Blogger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Blogger.xcdatamodel; sourceTree = "<group>"; };
+		9C6450A02788BBB400615D39 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9C6450A22788BBBF00615D39 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		9C6450A42788BBD500615D39 /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
+		9C6450A62788BBF200615D39 /* AuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorView.swift; sourceTree = "<group>"; };
+		9C6450A92788C4C400615D39 /* HomeTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTagView.swift; sourceTree = "<group>"; };
+		9C6450AF2788E15E00615D39 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9C6450B62788EAE200615D39 /* BloggerFeedJSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloggerFeedJSONModel.swift; sourceTree = "<group>"; };
+		9C6450B82788F19200615D39 /* BloggerFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloggerFeedViewModel.swift; sourceTree = "<group>"; };
+		9C6450BA2788FD7300615D39 /* BloggerSearchFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloggerSearchFeedViewModel.swift; sourceTree = "<group>"; };
+		9C6450BC2789004800615D39 /* EntryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRowView.swift; sourceTree = "<group>"; };
+		9C6450BE27890BC900615D39 /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
+		9C6450C127897EAD00615D39 /* SavedEntryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedEntryRowView.swift; sourceTree = "<group>"; };
+		9C6450C42789975C00615D39 /* ExploreEntryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreEntryRowView.swift; sourceTree = "<group>"; };
+		9C6450C727899B0100615D39 /* BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
+		9C6450C927899B1D00615D39 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		9C6450CB2789A10500615D39 /* ShareSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetView.swift; sourceTree = "<group>"; };
+		9C6450CD2789E86D00615D39 /* SavedPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostView.swift; sourceTree = "<group>"; };
+		9C6450CF2789F16400615D39 /* EditNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteView.swift; sourceTree = "<group>"; };
+		9C71E976278D51B0008BD8B2 /* BloggerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloggerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C71E978278D51B1008BD8B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C71E97E278D51B2008BD8B2 /* BloggerWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BloggerWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C71E983278D51B2008BD8B2 /* ListViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewView.swift; sourceTree = "<group>"; };
+		9C71E985278D51B2008BD8B2 /* BloggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloggerApp.swift; sourceTree = "<group>"; };
+		9C71E987278D51B2008BD8B2 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		9C71E989278D51B2008BD8B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C71E98C278D51B2008BD8B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9C71E98E278D51B2008BD8B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C97A4572796CA0B00E05A98 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
+		9C97A4592796CF6E00E05A98 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		9CCC9898278A0D5200E29EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9CCC989E278A0F2300E29EF2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9CCC98A0278A0F2300E29EF2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9CE2B5BD279731D9003E38BD /* AddTagButtomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTagButtomSheetView.swift; sourceTree = "<group>"; };
+		9CF3F0C3278ADDE000ADB926 /* BloggerWidgetJSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloggerWidgetJSONModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9C0A2667278A14FA00D6F52F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0A266C278A14FA00D6F52F /* SwiftUI.framework in Frameworks */,
+				9C0A266B278A14FA00D6F52F /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9C6450822788B81D00615D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C6450AD2788C93800615D39 /* BottomSheet in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C71E97B278D51B2008BD8B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,11 +198,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C0A266D278A14FA00D6F52F /* BloggerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9CF3F0C2278ADDBB00ADB926 /* Models */,
+				9C305146278AE05E007868BD /* View Models */,
+				9C0A266E278A14FA00D6F52F /* BloggerWidget.swift */,
+				9C0A2670278A14FA00D6F52F /* Assets.xcassets */,
+				9C0A2672278A14FA00D6F52F /* Info.plist */,
+			);
+			path = BloggerWidget;
+			sourceTree = "<group>";
+		};
+		9C17E954278F27B8005AFE9F /* Author */ = {
+			isa = PBXGroup;
+			children = (
+				9C6450A62788BBF200615D39 /* AuthorView.swift */,
+				9C17E952278F2677005AFE9F /* SettingView.swift */,
+				9C97A4572796CA0B00E05A98 /* TagListView.swift */,
+			);
+			path = Author;
+			sourceTree = "<group>";
+		};
+		9C305146278AE05E007868BD /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C305147278AE094007868BD /* BloggerPostViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		9C64507C2788B81D00615D39 = {
 			isa = PBXGroup;
 			children = (
 				9C6450872788B81D00615D39 /* Blogger */,
+				9C0A266D278A14FA00D6F52F /* BloggerWidget */,
+				9C71E977278D51B0008BD8B2 /* BloggerWatch */,
+				9C71E982278D51B2008BD8B2 /* BloggerWatch WatchKit Extension */,
 				9C6450862788B81D00615D39 /* Products */,
+				9C6450AE2788E15E00615D39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +244,9 @@
 			isa = PBXGroup;
 			children = (
 				9C6450852788B81D00615D39 /* Blogger.app */,
+				9C0A266A278A14FA00D6F52F /* BloggerWidgetExtension.appex */,
+				9C71E976278D51B0008BD8B2 /* BloggerWatch.app */,
+				9C71E97E278D51B2008BD8B2 /* BloggerWatch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,8 +254,12 @@
 		9C6450872788B81D00615D39 /* Blogger */ = {
 			isa = PBXGroup;
 			children = (
+				9CCC9898278A0D5200E29EF2 /* Info.plist */,
 				9C6450882788B81D00615D39 /* BloggerApp.swift */,
 				9C64508A2788B81D00615D39 /* ContentView.swift */,
+				9C64509B2788BA1F00615D39 /* Models */,
+				9C64509C2788BA3100615D39 /* Views */,
+				9C64509D2788BA3D00615D39 /* View Models */,
 				9C64508C2788B81E00615D39 /* Assets.xcassets */,
 				9C6450912788B81E00615D39 /* Persistence.swift */,
 				9C6450932788B81E00615D39 /* Blogger.xcdatamodeld */,
@@ -73,9 +276,146 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9C64509B2788BA1F00615D39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C6450B62788EAE200615D39 /* BloggerFeedJSONModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9C64509C2788BA3100615D39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C6450A82788C47A00615D39 /* Home */,
+				9C6450C32789973600615D39 /* Explore */,
+				9C6450C027897E8100615D39 /* Saved */,
+				9C17E954278F27B8005AFE9F /* Author */,
+				9C6450C627899AE500615D39 /* WebKit */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9C64509D2788BA3D00615D39 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C6450B82788F19200615D39 /* BloggerFeedViewModel.swift */,
+				9C6450BA2788FD7300615D39 /* BloggerSearchFeedViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		9C6450A82788C47A00615D39 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9C6450A02788BBB400615D39 /* HomeView.swift */,
+				9C6450A92788C4C400615D39 /* HomeTagView.swift */,
+				9CE2B5BD279731D9003E38BD /* AddTagButtomSheetView.swift */,
+				9C6450BC2789004800615D39 /* EntryRowView.swift */,
+				9C6450BE27890BC900615D39 /* BookmarkView.swift */,
+				9C6450C927899B1D00615D39 /* PostView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9C6450AE2788E15E00615D39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C6450AF2788E15E00615D39 /* XCTest.framework */,
+				9CCC989E278A0F2300E29EF2 /* WidgetKit.framework */,
+				9CCC98A0278A0F2300E29EF2 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C6450C027897E8100615D39 /* Saved */ = {
+			isa = PBXGroup;
+			children = (
+				9C6450A42788BBD500615D39 /* SavedView.swift */,
+				9C6450C127897EAD00615D39 /* SavedEntryRowView.swift */,
+				9C6450CF2789F16400615D39 /* EditNoteView.swift */,
+				9C6450CD2789E86D00615D39 /* SavedPostView.swift */,
+			);
+			path = Saved;
+			sourceTree = "<group>";
+		};
+		9C6450C32789973600615D39 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				9C6450A22788BBBF00615D39 /* ExploreView.swift */,
+				9C6450C42789975C00615D39 /* ExploreEntryRowView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		9C6450C627899AE500615D39 /* WebKit */ = {
+			isa = PBXGroup;
+			children = (
+				9C6450C727899B0100615D39 /* BrowserView.swift */,
+				9C97A4592796CF6E00E05A98 /* SafariView.swift */,
+				9C6450CB2789A10500615D39 /* ShareSheetView.swift */,
+			);
+			path = WebKit;
+			sourceTree = "<group>";
+		};
+		9C71E977278D51B0008BD8B2 /* BloggerWatch */ = {
+			isa = PBXGroup;
+			children = (
+				9C71E978278D51B1008BD8B2 /* Assets.xcassets */,
+			);
+			path = BloggerWatch;
+			sourceTree = "<group>";
+		};
+		9C71E982278D51B2008BD8B2 /* BloggerWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9C71E985278D51B2008BD8B2 /* BloggerApp.swift */,
+				9C17E956278F48BD005AFE9F /* TagView.swift */,
+				9C71E983278D51B2008BD8B2 /* ListViewView.swift */,
+				9C71E987278D51B2008BD8B2 /* ComplicationController.swift */,
+				9C71E989278D51B2008BD8B2 /* Assets.xcassets */,
+				9C71E98E278D51B2008BD8B2 /* Info.plist */,
+				9C71E98B278D51B2008BD8B2 /* Preview Content */,
+			);
+			path = "BloggerWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		9C71E98B278D51B2008BD8B2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9C71E98C278D51B2008BD8B2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9CF3F0C2278ADDBB00ADB926 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CF3F0C3278ADDE000ADB926 /* BloggerWidgetJSONModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9C0A2669278A14FA00D6F52F /* BloggerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C0A2676278A14FA00D6F52F /* Build configuration list for PBXNativeTarget "BloggerWidgetExtension" */;
+			buildPhases = (
+				9C0A2666278A14FA00D6F52F /* Sources */,
+				9C0A2667278A14FA00D6F52F /* Frameworks */,
+				9C0A2668278A14FA00D6F52F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BloggerWidgetExtension;
+			productName = BloggerWidgetExtension;
+			productReference = 9C0A266A278A14FA00D6F52F /* BloggerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9C6450842788B81D00615D39 /* Blogger */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C6450982788B81E00615D39 /* Build configuration list for PBXNativeTarget "Blogger" */;
@@ -83,15 +423,56 @@
 				9C6450812788B81D00615D39 /* Sources */,
 				9C6450822788B81D00615D39 /* Frameworks */,
 				9C6450832788B81D00615D39 /* Resources */,
+				9CCC98AE278A0F2400E29EF2 /* Embed App Extensions */,
+				9C71E992278D51B2008BD8B2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C0A2674278A14FA00D6F52F /* PBXTargetDependency */,
+				9C71E990278D51B2008BD8B2 /* PBXTargetDependency */,
+			);
+			name = Blogger;
+			packageProductDependencies = (
+				9C6450AC2788C93800615D39 /* BottomSheet */,
+			);
+			productName = Blogger;
+			productReference = 9C6450852788B81D00615D39 /* Blogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C71E975278D51B0008BD8B2 /* BloggerWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C71E999278D51B2008BD8B2 /* Build configuration list for PBXNativeTarget "BloggerWatch" */;
+			buildPhases = (
+				9C71E974278D51B0008BD8B2 /* Resources */,
+				9C71E995278D51B2008BD8B2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C71E981278D51B2008BD8B2 /* PBXTargetDependency */,
+			);
+			name = BloggerWatch;
+			productName = BloggerWatch;
+			productReference = 9C71E976278D51B0008BD8B2 /* BloggerWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9C71E97D278D51B2008BD8B2 /* BloggerWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C71E998278D51B2008BD8B2 /* Build configuration list for PBXNativeTarget "BloggerWatch WatchKit Extension" */;
+			buildPhases = (
+				9C71E97A278D51B2008BD8B2 /* Sources */,
+				9C71E97B278D51B2008BD8B2 /* Frameworks */,
+				9C71E97C278D51B2008BD8B2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Blogger;
-			productName = Blogger;
-			productReference = 9C6450852788B81D00615D39 /* Blogger.app */;
-			productType = "com.apple.product-type.application";
+			name = "BloggerWatch WatchKit Extension";
+			productName = "BloggerWatch WatchKit Extension";
+			productReference = 9C71E97E278D51B2008BD8B2 /* BloggerWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -103,7 +484,16 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					9C0A2669278A14FA00D6F52F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					9C6450842788B81D00615D39 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					9C71E975278D51B0008BD8B2 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					9C71E97D278D51B2008BD8B2 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -117,16 +507,30 @@
 				Base,
 			);
 			mainGroup = 9C64507C2788B81D00615D39;
+			packageReferences = (
+				9C6450AB2788C93800615D39 /* XCRemoteSwiftPackageReference "BottomSheet" */,
+			);
 			productRefGroup = 9C6450862788B81D00615D39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9C6450842788B81D00615D39 /* Blogger */,
+				9C0A2669278A14FA00D6F52F /* BloggerWidgetExtension */,
+				9C71E975278D51B0008BD8B2 /* BloggerWatch */,
+				9C71E97D278D51B2008BD8B2 /* BloggerWatch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9C0A2668278A14FA00D6F52F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0A2671278A14FA00D6F52F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9C6450832788B81D00615D39 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,27 +540,165 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C71E974278D51B0008BD8B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C71E979278D51B1008BD8B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C71E97C278D51B2008BD8B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C71E98D278D51B2008BD8B2 /* Preview Assets.xcassets in Resources */,
+				9C71E98A278D51B2008BD8B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9C0A2666278A14FA00D6F52F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C305148278AE094007868BD /* BloggerPostViewModel.swift in Sources */,
+				9C0A266F278A14FA00D6F52F /* BloggerWidget.swift in Sources */,
+				9CBD2EDD278BF60000CFAB6C /* BloggerFeedJSONModel.swift in Sources */,
+				9CF3F0C4278ADDE000ADB926 /* BloggerWidgetJSONModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9C6450812788B81D00615D39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6450A72788BBF200615D39 /* AuthorView.swift in Sources */,
+				9C6450A32788BBBF00615D39 /* ExploreView.swift in Sources */,
+				9C6450D02789F16400615D39 /* EditNoteView.swift in Sources */,
+				9C6450CC2789A10500615D39 /* ShareSheetView.swift in Sources */,
+				9C97A45A2796CF6E00E05A98 /* SafariView.swift in Sources */,
+				9C6450B72788EAE200615D39 /* BloggerFeedJSONModel.swift in Sources */,
 				9C6450922788B81E00615D39 /* Persistence.swift in Sources */,
 				9C64508B2788B81D00615D39 /* ContentView.swift in Sources */,
+				9C6450A52788BBD500615D39 /* SavedView.swift in Sources */,
+				9CE2B5BE279731D9003E38BD /* AddTagButtomSheetView.swift in Sources */,
+				9C6450BF27890BC900615D39 /* BookmarkView.swift in Sources */,
 				9C6450952788B81E00615D39 /* Blogger.xcdatamodeld in Sources */,
+				9C6450B92788F19200615D39 /* BloggerFeedViewModel.swift in Sources */,
+				9C6450CA27899B1D00615D39 /* PostView.swift in Sources */,
+				9C6450BD2789004800615D39 /* EntryRowView.swift in Sources */,
+				9C6450C227897EAD00615D39 /* SavedEntryRowView.swift in Sources */,
+				9C6450C827899B0100615D39 /* BrowserView.swift in Sources */,
+				9C6450CE2789E86E00615D39 /* SavedPostView.swift in Sources */,
+				9C6450C52789975C00615D39 /* ExploreEntryRowView.swift in Sources */,
+				9C6450BB2788FD7300615D39 /* BloggerSearchFeedViewModel.swift in Sources */,
+				9C6450AA2788C4C400615D39 /* HomeTagView.swift in Sources */,
+				9C6450A12788BBB400615D39 /* HomeView.swift in Sources */,
+				9C97A4582796CA0C00E05A98 /* TagListView.swift in Sources */,
 				9C6450892788B81D00615D39 /* BloggerApp.swift in Sources */,
+				9C17E953278F2677005AFE9F /* SettingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C71E97A278D51B2008BD8B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C71E986278D51B2008BD8B2 /* BloggerApp.swift in Sources */,
+				9C71E99D278D5450008BD8B2 /* Blogger.xcdatamodeld in Sources */,
+				9C71E984278D51B2008BD8B2 /* ListViewView.swift in Sources */,
+				9C71E988278D51B2008BD8B2 /* ComplicationController.swift in Sources */,
+				9C71E99C278D53A6008BD8B2 /* Persistence.swift in Sources */,
+				9C71E99B278D5310008BD8B2 /* BloggerFeedJSONModel.swift in Sources */,
+				9C71E99E278D5C94008BD8B2 /* BloggerSearchFeedViewModel.swift in Sources */,
+				9C71E99A278D52A7008BD8B2 /* BloggerFeedViewModel.swift in Sources */,
+				9C17E957278F48BD005AFE9F /* TagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9C0A2674278A14FA00D6F52F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C0A2669278A14FA00D6F52F /* BloggerWidgetExtension */;
+			targetProxy = 9C0A2673278A14FA00D6F52F /* PBXContainerItemProxy */;
+		};
+		9C71E981278D51B2008BD8B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C71E97D278D51B2008BD8B2 /* BloggerWatch WatchKit Extension */;
+			targetProxy = 9C71E980278D51B2008BD8B2 /* PBXContainerItemProxy */;
+		};
+		9C71E990278D51B2008BD8B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C71E975278D51B0008BD8B2 /* BloggerWatch */;
+			targetProxy = 9C71E98F278D51B2008BD8B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		9C0A2677278A14FA00D6F52F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24SCJHS57L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BloggerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BloggerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Blogger.BloggerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C0A2678278A14FA00D6F52F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24SCJHS57L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BloggerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BloggerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Blogger.BloggerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		9C6450962788B81E00615D39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -218,6 +760,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -272,6 +815,7 @@
 		9C6450992788B81E00615D39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -280,9 +824,9 @@
 				DEVELOPMENT_TEAM = 24SCJHS57L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Blogger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,6 +845,7 @@
 		9C64509A2788B81E00615D39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,9 +854,9 @@
 				DEVELOPMENT_TEAM = 24SCJHS57L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Blogger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -327,9 +872,138 @@
 			};
 			name = Release;
 		};
+		9C71E993278D51B2008BD8B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24SCJHS57L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = BloggerWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = BloggerWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = self.edu.Blogger;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Blogger.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		9C71E994278D51B2008BD8B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24SCJHS57L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = BloggerWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = BloggerWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = self.edu.Blogger;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Blogger.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		9C71E996278D51B2008BD8B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BloggerWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 24SCJHS57L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BloggerWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BloggerWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = BloggerWatch_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Blogger.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		9C71E997278D51B2008BD8B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BloggerWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 24SCJHS57L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BloggerWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BloggerWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = BloggerWatch_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Blogger.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9C0A2676278A14FA00D6F52F /* Build configuration list for PBXNativeTarget "BloggerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C0A2677278A14FA00D6F52F /* Debug */,
+				9C0A2678278A14FA00D6F52F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9C6450802788B81D00615D39 /* Build configuration list for PBXProject "Blogger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -348,7 +1022,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		9C71E998278D51B2008BD8B2 /* Build configuration list for PBXNativeTarget "BloggerWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C71E996278D51B2008BD8B2 /* Debug */,
+				9C71E997278D51B2008BD8B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C71E999278D51B2008BD8B2 /* Build configuration list for PBXNativeTarget "BloggerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C71E993278D51B2008BD8B2 /* Debug */,
+				9C71E994278D51B2008BD8B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9C6450AB2788C93800615D39 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamfootdev/BottomSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9C6450AC2788C93800615D39 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C6450AB2788C93800615D39 /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9C6450932788B81E00615D39 /* Blogger.xcdatamodeld */ = {

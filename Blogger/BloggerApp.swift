@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct BloggerApp: App {
-    let persistenceController = PersistenceController.shared
-
+    
+    @Environment(\.colorScheme) private var colorScheme
+    @AppStorage("preferColorScheme") var preferColorScheme: String = "System"
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .preferredColorScheme(preferColorScheme == "System" ? .none : preferColorScheme == "Dark" ? .dark : .light)
         }
     }
 }

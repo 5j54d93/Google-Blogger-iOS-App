@@ -9,80 +9,47 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-
+    
+    let persistenceController = PersistenceController.shared
+    
+    @AppStorage("preferColorScheme") var preferColorScheme: String = "System"
+    
+    @StateObject var bloggerFeedViewModel = BloggerFeedViewModel()
+    
+    @State private var lastSelectTab = ""
+    @State private var selectTab = 0
+    @State private var backToTop = false
+    
+    var tabViewHandler: Binding<Int> { Binding (
+        get: { self.selectTab },
+        set: {
+            if $0 == self.selectTab { backToTop.toggle() }
+            self.selectTab = $0
+        }
+    )}
+    
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
+        TabView(selection: tabViewHandler) {
+            HomeView(backToTop: $backToTop)
+                .tabItem {
+                    Image(systemName: selectTab == 0 ? "house.fill" : "house")
+                        .environment(\.symbolVariants, .none)
+                }.tag(0)
+            ExploreView(backToTop: $backToTop)
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                }.tag(1)
+            SavedView(backToTop: $backToTop, selectTab: $selectTab)
+                .tabItem {
+                    Image(systemName: selectTab == 2 ? "bookmark.fill" : "bookmark")
+                        .environment(\.symbolVariants, .none)
+                }.tag(2)
+            AuthorView()
+                .tabItem {
+                    Image(systemName: selectTab == 3 ? "person.crop.circle.fill" : "person.crop.circle")
+                        .environment(\.symbolVariants, .none)
+                }.tag(3)
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-}
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        .environment(\.managedObjectContext, persistenceController.container.viewContext)
     }
 }
