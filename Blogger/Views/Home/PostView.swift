@@ -47,6 +47,12 @@ struct PostView: View {
                 }
                 ( Text(authorName) + Text(" in ") + Text(postDate, format: .dateTime.year().month().day()) )
                     .font(.subheadline).foregroundColor(colorScheme == .light ? .black : .white)
+                    .onAppear {
+                        entry.author.forEach { author in
+                            authorName = author.name.name
+                        }
+                        postDate = entry.published.published
+                    }
                 Spacer()
                 Button {
                     readPost = false
@@ -101,10 +107,6 @@ struct PostView: View {
                         entry.isSave = savedInCoreData
                     }
                 Button {
-                    entry.author.forEach { author in
-                        authorName = author.name.name
-                    }
-                    postDate = entry.published.published
                     showMore = true
                 } label: {
                     Image(systemName: "ellipsis")
