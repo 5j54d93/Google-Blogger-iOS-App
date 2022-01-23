@@ -8,7 +8,7 @@
 
 Using Google Blogger API to build an iOS app like Medium！
 
-<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Home.gif?raw=true" width='33%' height='100%'/>
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Home.gif?raw=true" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Explore.gif?raw=true" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Saved.gif?raw=true" width='25%' height='100%'/>
 
 ## Google Blogger iOS App｜License：© Ricky Chuang
 
