@@ -6,7 +6,7 @@
 ![GitHub watchers](https://img.shields.io/github/watchers/5j54d93/Google-Blogger-iOS-App)
 ![GitHub repo size](https://img.shields.io/github/repo-size/5j54d93/Google-Blogger-iOS-App)
 
-Using Google Blogger API to build an iOS app like Medium！
+Using 2 Google Blogger API to build an iOS app like Medium！
 
 - **Available on**：iOS、iPadOS、watchOS、macOS（M1）
 - **Widgets** that show content from API
