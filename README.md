@@ -22,7 +22,7 @@ Using 2 Google Blogger API to build an iOS app like Medium！
 
 > **widget**：iPad Pro（12.9-inch）（5th generation）
 
-<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/widget.png?raw=true" width='100%' height='100%'/>
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/iPad-widget.jpeg?raw=true" width='100%' height='100%'/>
 
 - Designed like Apple News app and support 4 all different sizes
 
