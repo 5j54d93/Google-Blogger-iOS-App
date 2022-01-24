@@ -10,6 +10,7 @@ Using Google Blogger API to build an iOS app like Medium！
 
 - **Available on**：iOS、iPadOS、watchOS、macOS（M1）
 - **Widgets** that show content from API
+- **Core Data**、**@AppStorage**
 - **MVVM architecture**
 - **SwiftUI**
 
