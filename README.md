@@ -20,6 +20,12 @@ List posts with infinite scroll from [**Google Blogger API**](https://developers
 
 <img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-1.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-2.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-3.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-4.png" width='25%' height='100%'/>
 
+## How To Use
+
+1. Simply click on the green「Code」button on top right
+2. click「Open with Xcode」
+3. Having fun to explore this Google Blogger iOS App！
+
 ## Features
 
 ### [HomeView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/HomeView.swift)
