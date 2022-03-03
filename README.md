@@ -14,11 +14,11 @@ List posts with infinite scroll from [**Google Blogger API**](https://developers
 
 ## Widgets：iPad Pro（12.9-inch、5th generation）
 
-<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/iPad-widget.jpeg?raw=true" width='100%' height='100%'/>
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/widgets.jpg" width='100%' height='100%'/>
 
 ## watchOS：Apple Watch Series 7 - 45mm
 
-<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Apple%20Watch%201.png?raw=true" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Apple%20Watch%202.png?raw=true" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Apple%20Watch%203.png?raw=true" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Apple%20Watch%204.png?raw=true" width='25%' height='100%'/>
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Watch-1.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Watch-2.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Watch-3.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Watch-4.png" width='25%' height='100%'/>
 
 ## License：MIT
 
