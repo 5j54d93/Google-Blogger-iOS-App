@@ -51,8 +51,8 @@ struct EntryRowView: View {
                         Text(entry.title.title).bold().font(.title3)
                         if let category = entry.category {
                             HStack {
-                                ForEach(category, id: \.term) { category in
-                                    Text(category.term).lineLimit(1)
+                                ForEach(category.prefix(3), id: \.term) { category in
+                                    Text(category.term)
                                 }
                             }
                             .foregroundColor(.gray)
