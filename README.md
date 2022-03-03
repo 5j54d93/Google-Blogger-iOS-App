@@ -8,23 +8,17 @@
 
 List posts with infinite scroll from [**Google Blogger API**](https://developers.google.com/blogger/docs/3.0/using?hl=en) in MVVM architecture, and using [**SwiftUI**](https://developer.apple.com/xcode/swiftui/) to design like [**Medium iOS App**](https://apps.apple.com/tw/app/medium/id828256236), which could read, search, save, comment posts, and so many excellent feature！
 
-> **iOS**：iPhone 13 Pro Max
+## iOS：iPhone 13 Pro Max
 
-<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Home.gif?raw=true" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Explore.gif?raw=true" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Saved.gif?raw=true" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Author.gif?raw=true" width='25%' height='100%'/>
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Home-Demo.gif" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Explore-Demo.gif" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Saved-Demo.gif" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Author-Demo.gif" width='25%' height='100%'/>
 
-- **4 Tabs**：Home、Explore、Saved、Author
-
-> **widget**：iPad Pro（12.9-inch）（5th generation）
+## Widgets：iPad Pro（12.9-inch、5th generation）
 
 <img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/iPad-widget.jpeg?raw=true" width='100%' height='100%'/>
 
-- Designed like Apple News app and support 4 all different sizes
-
-> **watchOS**：Apple Watch Series 7 - 45mm
+## watchOS：Apple Watch Series 7 - 45mm
 
 <img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Apple%20Watch%201.png?raw=true" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Apple%20Watch%202.png?raw=true" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Apple%20Watch%203.png?raw=true" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Apple%20Watch%204.png?raw=true" width='25%' height='100%'/>
-
-- Home、Add tag、Delete tag、Posts list
 
 ## License：MIT
 
