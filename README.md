@@ -6,7 +6,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/5j54d93/Google-Blogger-iOS-App)
 ![Platform](https://img.shields.io/badge/platform-iOS｜iPadOS｜watchOS｜macOS-lightgrey)
 
-List posts with infinite scroll from [**Google Blogger API**](https://developers.google.com/blogger/docs/3.0/using?hl=en) in MVVM architecture, and using [**SwiftUI**](https://developer.apple.com/xcode/swiftui/) to design like [**Medium iOS App**](https://apps.apple.com/tw/app/medium/id828256236), which could read, search, save, comment posts, and so many excellent feature！
+List posts with infinite scroll from [**Google Blogger API**](https://developers.google.com/blogger/docs/3.0/using?hl=en) in MVVM architecture, and using [**SwiftUI**](https://developer.apple.com/xcode/swiftui/) to design like [**Medium iOS App**](https://apps.apple.com/tw/app/medium/id828256236), which could read, search, save, comment posts, and so many excellent features！
 
 > **iOS**：iPhone 13 Pro Max
 
