@@ -1,18 +1,11 @@
 # Google Blogger iOS App
 
 [![GitHub license](https://img.shields.io/github/license/5j54d93/My-Favorite-NETFLIX)](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/LICENSE)
-![GitHub contributors](https://img.shields.io/github/contributors/5j54d93/Google-Blogger-iOS-App)
 ![GitHub Repo stars](https://img.shields.io/github/stars/5j54d93/Google-Blogger-iOS-App)
-![GitHub watchers](https://img.shields.io/github/watchers/5j54d93/Google-Blogger-iOS-App)
 ![GitHub repo size](https://img.shields.io/github/repo-size/5j54d93/Google-Blogger-iOS-App)
+![Platform](https://img.shields.io/badge/platform-iOS｜iPadOS｜watchOS｜macOS-lightgrey)
 
-Using 2 Google Blogger API to build an iOS app like Medium！
-
-- **Available on**：iOS、iPadOS、watchOS、macOS（M1）
-- **Widgets** that show content from API
-- **Core Data**、**@AppStorage**
-- **MVVM architecture**
-- **SwiftUI**
+List posts in infinite scroll from Google Blogger API with MVVM, and using SwiftUI to design UI like Medium, could read, search, save, comment posts, and so many excellent feature！
 
 > **iOS**：iPhone 13 Pro Max
 
@@ -32,6 +25,6 @@ Using 2 Google Blogger API to build an iOS app like Medium！
 
 - Home、Add tag、Delete tag、Posts list
 
-## Google Blogger iOS App｜License：© Ricky Chuang
+## License：MIT
 
-This package is licensed under MIT license. See [LICENSE](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/LICENSE) for details.
+This package is [MIT licensed](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/LICENSE).
