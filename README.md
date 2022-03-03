@@ -18,7 +18,7 @@ List posts with infinite scroll from [**Google Blogger API**](https://developers
 
 ## watchOS：Apple Watch Series 7 - 45mm
 
-<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Watch-1.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Watch-2.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Watch-3.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/Watch-4.png" width='25%' height='100%'/>
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-1.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-2.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-3.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-4.png" width='25%' height='100%'/>
 
 ## License：MIT
 
