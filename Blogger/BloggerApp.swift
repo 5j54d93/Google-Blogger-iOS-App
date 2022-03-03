@@ -10,7 +10,6 @@ import SwiftUI
 @main
 struct BloggerApp: App {
     
-    @Environment(\.colorScheme) private var colorScheme
     @AppStorage("preferColorScheme") var preferColorScheme: String = "System"
     
     var body: some Scene {
