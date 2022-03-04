@@ -28,7 +28,7 @@ List posts with infinite scroll from [**Google Blogger API**](https://developers
 
 if nothing happen：
 
-Download this repository via `git clone` or from [Releases](https://github.com/5j54d93/Google-Blogger-iOS-App/releases)
+- Download this repository via `git clone` or from [Releases](https://github.com/5j54d93/Google-Blogger-iOS-App/releases)
 
 ```shell
 git clone https://github.com/5j54d93/Google-Blogger-iOS-App --depth
@@ -36,26 +36,45 @@ git clone https://github.com/5j54d93/Google-Blogger-iOS-App --depth
 
 ## Architecture Design、Features、Explanation
 
+### [Models／BloggerFeedJSONModel](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Models/BloggerFeedJSONModel.swift)
+
+- use `CodingKey` to change label in JSON data fetched from API
+
 ### [ContentView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/ContentView.swift)
 
-- 4 tabs：[HomeView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/HomeView.swift)、[ExploreView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Explore/ExploreView.swift)、[SavedView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Saved/SavedView.swift)、[AuthorView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Author/AuthorView.swift)
-- use `.environment(\.symbolVariants, .none)` to prevent `tabItem` default `.fill`（only change `tabItem` icon type to `.fill` if selected）
+- `TabView`：[`HomeView()`](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/HomeView.swift)、[`ExploreView()`](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Explore/ExploreView.swift)、[`SavedView()`](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Saved/SavedView.swift)、[`AuthorView()`](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Author/AuthorView.swift)
+- use `.environment(\.symbolVariants, .none)` to prevent `tabItem` with default `.fill` icon type
+  - only change `tabItem` icon type to `.fill` when selected
 
-<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Home-tabItem.png" width='50%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Saved-tabItem.png" width='50%' height='100%'/>
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Home-tabItem.png" width='100%' height='100%'/>
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Saved-tabItem.png" width='100%' height='100%'/>
 
 ### [HomeView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/HomeView.swift)
+
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/HomeView.png" width='100%' height='100%'/>
 
 - Show「You're offline」if we can't fetch data from API
 - `.scrollTo()` top when user click on `TabView`'s `tabItem`
 - when there's more posts to load, show `ProgressView()` at list bottom with `.onAppear` to achieve infinite scroll
 - use `.refreshable` to let list could refresh when been pull down
 
-### [HomeTagView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/HomeTagView.swift)
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/You're-offline.png" width='50%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Home-ProgressView.png" width='50%' height='100%'/>
 
+#### [HomeTagView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/HomeTagView.swift)
+
+- click first plus button could triger bottomSheet（[`AddTagButtomSheetView`](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/AddTagButtomSheetView.swift)）to add tag to `Core Data`
 - show tags that store in `Core Data`
 - `.onLongPressGesture` tag could show delete icon aside which on click could delet tag form `Core Data`
 
-### [EntryRowView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/HomeTagView.swift)
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/HomeTagView.png" width='100%' height='100%'/>
+
+#### [AddTagButtomSheetView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/AddTagButtomSheetView.swift)
+
+- couldn't add the same tag multiple times
+
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/AddTagButtomSheetView.png" width='25%' height='100%'/> <img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Add-same-tag.png" width='25%' height='100%'/>
+
+#### [EntryRowView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/HomeTagView.swift)
 
 - use `.prefix(3)` to only show the first 3 items in array with `ForEach`
 - deal with post's thumbnail url to get higher resolution image
@@ -73,6 +92,17 @@ AsyncImage(url: URL(string: fullResUrl + "s480")) { image in
 .frame(width: 75, height: 75)
 .clipped()
 ```
+
+- onClink to show `fullScreenCover` [PostView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/PostView.swift)
+- long press to show `contextMenu`
+
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Home-contextMenu.png" width='50%' height='100%'/>
+
+#### [PostView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/PostView.swift)
+
+- use `WebKit`：[`WKWebView`](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/WebKit/BrowserView.swift) to show web
+
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/PostView.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/PostView-share.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/PostView-more.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/PostView-display-settings.png" width='25%' height='100%'/>
 
 ### [SettingView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Author/SettingView.swift)
 
