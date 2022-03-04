@@ -62,6 +62,7 @@ git clone https://github.com/5j54d93/Google-Blogger-iOS-App --depth
 
 #### [HomeTagView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/HomeTagView.swift)
 
+- display tags with `ScrollView(.horizontal, showsIndicators: false)`
 - click first plus button could triger bottomSheet（[`AddTagButtomSheetView`](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/AddTagButtomSheetView.swift)）to add tag to `Core Data`
 - show tags that store in `Core Data`
 - `.onLongPressGesture` tag could show delete icon aside which on click could delet tag form `Core Data`
@@ -103,6 +104,14 @@ AsyncImage(url: URL(string: fullResUrl + "s480")) { image in
 - use `WebKit`：[`WKWebView`](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/WebKit/BrowserView.swift) to show web
 
 <img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/PostView.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/PostView-share.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/PostView-more.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/PostView-display-settings.png" width='25%' height='100%'/>
+
+### [ExploreView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Explore/ExploreView.swift)
+
+- recommended search words（posts topics）with `ScrollView(.horizontal, showsIndicators: false)` from API
+- search post from API
+- show recommendation posts with different UI if there's no search word
+
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/ExploreView.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/ExploreView-contextMenu.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/ExploreView-with-search-word.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/ExploreView-contextMenu-with-search-word.png" width='25%' height='100%'/>
 
 ### [SettingView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Author/SettingView.swift)
 
