@@ -28,13 +28,20 @@ List posts with infinite scroll from [**Google Blogger API**](https://developers
 
 if nothing happen：
 
-Download this repository via `git clone`
+Download this repository via `git clone` or from [Releases](https://github.com/5j54d93/Google-Blogger-iOS-App/releases)
 
 ```shell
-git clone https://github.com/5j54d93/Google-Blogger-iOS-App
+git clone https://github.com/5j54d93/Google-Blogger-iOS-App --depth
 ```
 
-## Features
+## Architecture Design、Features、Explanation
+
+### [ContentView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/ContentView.swift)
+
+- 4 tabs：[HomeView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/HomeView.swift)、[ExploreView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Explore/ExploreView.swift)、[SavedView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Saved/SavedView.swift)、[AuthorView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Author/AuthorView.swift)
+- use `.environment(\.symbolVariants, .none)` to prevent `tabItem` default `.fill`（only change `tabItem` icon type to `.fill` if selected）
+
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Home-tabItem.png" width='50%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Saved-tabItem.png" width='50%' height='100%'/>
 
 ### [HomeView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/HomeView.swift)
 
