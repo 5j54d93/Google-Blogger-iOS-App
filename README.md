@@ -113,7 +113,16 @@ AsyncImage(url: URL(string: fullResUrl + "s480")) { image in
 
 <img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/ExploreView.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/ExploreView-contextMenu.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/ExploreView-with-search-word.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/ExploreView-contextMenu-with-search-word.png" width='25%' height='100%'/>
 
-### [SettingView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Author/SettingView.swift)
+### [SavedView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Saved/SavedView.swift)
+
+- if there's no posts saved in `Core Data`, click「Start browsing」could change tab to [`ExploreView`](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Explore/ExploreView.swift)
+- only show post title & post thumbnail when `List`：`editMode.isEditing`
+
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/SavedView.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/SavedView-with-saved-posts.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/EditNoteView.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/SavedEntryRowView-onDelete.png" width='25%' height='100%'/>
+
+### [AuthorView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Author/AuthorView.swift)
+
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/AuthorView-sheet.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/SettingView.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/TagListView.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Easter%20eggs.png" width='25%' height='100%'/>
 
 - if user click on version tag 5 times could change Blogger url in API to change this app's content！
 
