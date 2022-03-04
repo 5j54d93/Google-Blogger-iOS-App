@@ -72,7 +72,7 @@ git clone https://github.com/5j54d93/Google-Blogger-iOS-App --depth
 
 - couldn't add the same tag multiple times
 
-<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/AddTagButtomSheetView.png" width='25%' height='100%'/> <img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Add-same-tag.png" width='25%' height='100%'/>
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/AddTagButtomSheetView.png" width='33%' height='100%'/> <img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Add-same-tag.png" width='33%' height='100%'/>
 
 #### [EntryRowView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/HomeTagView.swift)
 
