@@ -3,6 +3,7 @@
 [![Swift](https://github.com/5j54d93/Google-Blogger-iOS-App/actions/workflows/swift.yml/badge.svg)](https://github.com/5j54d93/Google-Blogger-iOS-App/actions/workflows/swift.yml)
 [![GitHub license](https://img.shields.io/github/license/5j54d93/My-Favorite-NETFLIX)](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/LICENSE)
 ![GitHub Repo stars](https://img.shields.io/github/stars/5j54d93/Google-Blogger-iOS-App)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/5j54d93/Google-Blogger-iOS-App)
 ![GitHub repo size](https://img.shields.io/github/repo-size/5j54d93/Google-Blogger-iOS-App)
 ![Platform](https://img.shields.io/badge/platform-iOS｜iPadOS｜watchOS｜macOS-lightgrey)
 
