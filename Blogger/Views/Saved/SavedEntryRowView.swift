@@ -94,7 +94,6 @@ struct SavedEntryRowView: View {
                                     } label: {
                                         Label("Read", systemImage: "doc.richtext")
                                     }
-                                    .buttonStyle(.plain)
                                     Button(role: .destructive) {
                                         showUnsaveAlert = true
                                     } label: {
