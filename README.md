@@ -26,6 +26,14 @@ List posts with infinite scroll from [**Google Blogger API**](https://developers
 2. click「Open with Xcode」
 3. Having fun to explore this Google Blogger iOS App！
 
+if nothing happen：
+
+Download this repository via `git clone`
+
+```shell
+git clone https://github.com/5j54d93/Google-Blogger-iOS-App
+```
+
 ## Features
 
 ### [HomeView](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/Blogger/Views/Home/HomeView.swift)
