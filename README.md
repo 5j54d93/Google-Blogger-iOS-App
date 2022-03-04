@@ -12,14 +12,6 @@ List posts with infinite scroll from [**Google Blogger API**](https://developers
 
 <img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Home-Demo.gif" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Explore-Demo.gif" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Saved-Demo.gif" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Author-Demo.gif" width='25%' height='100%'/>
 
-> **Widgets**：iPad Pro（12.9-inch、5th generation）
-
-<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/widgets.jpg" width='100%' height='100%'/>
-
-> **watchOS**：Apple Watch Series 7 - 45mm
-
-<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-1.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-2.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-3.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-4.png" width='25%' height='100%'/>
-
 ## Overview
 
 1. [**How To Use**](https://github.com/5j54d93/Google-Blogger-iOS-App#how-to-use)
@@ -34,8 +26,8 @@ List posts with infinite scroll from [**Google Blogger API**](https://developers
    - [ExploreView](https://github.com/5j54d93/Google-Blogger-iOS-App#exploreview)
    - [SavedView](https://github.com/5j54d93/Google-Blogger-iOS-App#savedview)
    - [AuthorView](https://github.com/5j54d93/Google-Blogger-iOS-App#authorview)
-   - [Widget](https://github.com/5j54d93/Google-Blogger-iOS-App#widget)
-   - [Watch](https://github.com/5j54d93/Google-Blogger-iOS-App#watch)
+   - [Widget](https://github.com/5j54d93/Google-Blogger-iOS-App#widget)：iPad Pro（12.9-inch、5th generation）
+   - [Watch](https://github.com/5j54d93/Google-Blogger-iOS-App#watch)：Apple Watch Series 7 - 45mm
 3. [**License：MIT**](https://github.com/5j54d93/Google-Blogger-iOS-App#licensemit)
 
 ## How To Use
@@ -146,12 +138,20 @@ AsyncImage(url: URL(string: fullResUrl + "s480")) { image in
 
 ### [Widget](https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/BloggerWidget/BloggerWidget.swift)
 
+> **Widgets**：iPad Pro（12.9-inch、5th generation）
+
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/widgets.jpg" width='100%' height='100%'/>
+
 - 4 different size
 - UI design like [Apple News](https://www.apple.com/apple-news/)
 - data fetch from API to get the newest posts
 - we also call API on `getSnapshot` in addition to `getTimeline`
 
 ### [Watch](https://github.com/5j54d93/Google-Blogger-iOS-App/tree/main/BloggerWatch%20WatchKit%20Extension)
+
+> **watchOS**：Apple Watch Series 7 - 45mm
+
+<img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-1.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-2.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-3.png" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Watch-4.png" width='25%' height='100%'/>
 
 - UI design with SwiftUI
 - data fetch from API
