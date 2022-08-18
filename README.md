@@ -11,7 +11,7 @@ List posts with infinite scroll from [**Google Blogger API**](https://developers
 
 <img src="https://repository-images.githubusercontent.com/449766115/7b89c8cc-714b-4329-8a6f-08d5bee6e2e6"/>
 
-> **iOS**：iPhone 13 Pro Max
+> **Demo GIF**：iPhone 13 Pro Max
 
 <img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Home-Demo.gif" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Explore-Demo.gif" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Saved-Demo.gif" width='25%' height='100%'/><img src="https://github.com/5j54d93/Google-Blogger-iOS-App/blob/main/.github/assets/Author-Demo.gif" width='25%' height='100%'/>
 
